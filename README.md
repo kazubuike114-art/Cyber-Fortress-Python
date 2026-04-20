@@ -30,3 +30,9 @@ Access Control: It only opens the gate if the password is 100% correct.
 ​Plaintext: The original message enter by the Captain.
 ​The Shift Key: A secret number used to scramble the letters.
 ​Ciphertext: The scrambled output that looks like random letters to a hacker.
+​🔍 Level 6: The Vulnerability Scanner (Security Auditing)
+​The Vulnerability Scanner is a tool that searches for weaknesses in our own fortress so we can fix them before a hacker finds them.
+​How it Works:
+​The Dictionary Check: It compares any password against a "Weak Database" of common keys like 123456 or admin.
+​Complexity Rules: It checks if the key is long enough to resist a guessing robot.
+​Instant Reporting: It gives the Captain a "Security Report" showing if the fortress is safe or vulnerable.
