@@ -36,3 +36,9 @@ Access Control: It only opens the gate if the password is 100% correct.
 ​The Dictionary Check: It compares any password against a "Weak Database" of common keys like 123456 or admin.
 ​Complexity Rules: It checks if the key is long enough to resist a guessing robot.
 ​Instant Reporting: It gives the Captain a "Security Report" showing if the fortress is safe or vulnerable.
+​📡 Level 7: The Web Health Monitor (System Availability)
+​The final piece of the fortress is a monitoring system that ensures our web services are alive and healthy.
+​How it Works:
+​The Heartbeat: The script sends a request to a URL to check for a "Status 200" (the universal code for "Everything is OK").
+​Automated Logic: It uses a loop to check the site every few seconds without human help.
+​Incident Alerting: If the site fails to respond, it immediately prints an alert with the specific error.
