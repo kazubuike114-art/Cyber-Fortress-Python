@@ -18,3 +18,9 @@ Access Control: It only opens the gate if the password is 100% correct.
 ​Time Stamping: The guard uses the datetime tool to record the exact moment of an event.
 ​Permanent Storage: It writes the history into a file called fortress_logs.txt.
 ​Audit Trail: Even if the computer is turned off, the history is saved for the Captain to read later.
+​🔑 Level 4: Password Generator (The Key Maker)
+​The Password Generator ensures that the "Secret Keys" used for the fortress are impossible to guess.
+​How it Works:
+​The Ingredient Mix: It combines uppercase letters, lowercase letters, numbers, and special symbols.
+​The Digital Dice: It uses the random library to pick characters one by one.
+​Custom Length: The Captain can choose exactly how long and strong the key needs to be.
