@@ -24,3 +24,9 @@ Access Control: It only opens the gate if the password is 100% correct.
 ​The Ingredient Mix: It combines uppercase letters, lowercase letters, numbers, and special symbols.
 ​The Digital Dice: It uses the random library to pick characters one by one.
 ​Custom Length: The Captain can choose exactly how long and strong the key needs to be.
+​🔐 Level 5: The Encryption Engine (Cryptography)
+​This is my most advanced security project yet. It ensures that the Fortress's internal messages remain secret even if they are intercepted.
+​How it Works:
+​Plaintext: The original message enter by the Captain.
+​The Shift Key: A secret number used to scramble the letters.
+​Ciphertext: The scrambled output that looks like random letters to a hacker.
