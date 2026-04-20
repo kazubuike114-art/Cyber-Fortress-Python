@@ -12,3 +12,9 @@ Access Control: It only opens the gate if the password is 100% correct.
 ​The Clipboard (Variable): We created a counter called attempts that starts at zero.
 ​The Tally: Every time a wrong key is used, the guard adds 1 to the count.
 ​The Lockdown: If the count reaches 3, the guard stops listening and seals the gate.
+​🛡️ Level 3: The Secret Logbook (Security Logging)
+​The Secret Logbook is the final layer of our fortress. It creates a permanent record of everything that happens at the Front Gate.
+​How it Works:
+​Time Stamping: The guard uses the datetime tool to record the exact moment of an event.
+​Permanent Storage: It writes the history into a file called fortress_logs.txt.
+​Audit Trail: Even if the computer is turned off, the history is saved for the Captain to read later.
