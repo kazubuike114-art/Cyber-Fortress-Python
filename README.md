@@ -31,3 +31,11 @@ Welcome to the Fortress. This project demonstrates how to build professional sec
 ​Concept: Proactive defense.
 ​Vulnerability Scanner: Compares user inputs against a "Weak Database" of common passwords (like 123456).
 ​Health Monitor: Uses a loop to send "Heartbeat" requests to a URL, checking for a Status 200 to ensure the fortress is still online.
+
+---
+
+## ⚠️ Security Disclaimer
+This project is for **educational and portfolio purposes only**. While it demonstrates security concepts:
+* The encryption methods used (like Caesar Cipher) are for logic demonstration and are not cryptographically secure for real-world data.
+* Never use these scripts to store sensitive or personal information.
+* Always use industry-standard libraries and consult with security professionals for production-level applications.
