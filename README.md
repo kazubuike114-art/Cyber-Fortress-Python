@@ -1,15 +1,11 @@
 🏰 Cyber Fortress: Python Edition
 Welcome to the Fortress. This project demonstrates how to build professional security tools using Python.
 
-​🛡️ Layer 1: The Front Gate (Authentication)
+​ ​🛡️ Layer 1: The Front Gate (Authentication)
 ​Filename: gate_keeper.py
-​The Problem: Standard systems need a way to verify identity without letting everyone in. I needed to build a logic-gate that only opens when a 100% match is found.
-​The Solution: I used conditional matching logic to compare user input against a stored master key.
-​Lessons Learned: Hardcoding passwords (as seen here) is a security risk. In a real-world version, I would use hashed passwords stored in a secure environment file.
-​​🛡️ Layer 1 Update 
-​gate keeper1 (Legacy): 
-​v2 (Current): gate_keeper_v2_bcrypt.py - Upgraded Security. Implements bcrypt for industry-standard password hashing and salting.
-​Why I upgraded: I realized that storing passwords as plain text is a major vulnerability. If a database is leaked, every user is exposed. By switching to Bcrypt, I ensured that only a non-reversible hash is stored, protecting user data even in the event of a breach.
+​The Problem: Standard systems need a way to verify identity securely. I built a logic-gate that requires a 100% match.
+​Update (v2): gate_keeper_v2_bcrypt.py
+​Why I upgraded: I realized storing passwords as plain text is a major vulnerability. If a database is leaked, every user is exposed. By switching to Bcrypt, I ensured only a non-reversible hash is stored.
 🧠 Layer 2: The Guard’s Memory (Rate Limiting)
 ​Filename: guard_memory.py
 ​The Problem: Brute-force attacks. Without a "memory," a hacker can guess a password a million times a second.
