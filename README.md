@@ -1,41 +1,26 @@
-🏰 Cyber Fortress: Python Edition
-Welcome to the Fortress. This project demonstrates how to build professional security tools using Python.
+# Cyber-Fortress-Python
 
-​ ​🛡️ Layer 1: The Front Gate (Authentication)
-​Filename: gate_keeper.py
-​The Problem: Standard systems need a way to verify identity securely. I built a logic-gate that requires a 100% match.
-​Update (v2): gate_keeper_v2_bcrypt.py
-​Why I upgraded: I realized storing passwords as plain text is a major vulnerability. If a database is leaked, every user is exposed. By switching to Bcrypt, I ensured only a non-reversible hash is stored.
+`Cyber-Fortress-Python` is a modular, open-source defensive security and tactical incident response toolkit built in Python. Designed for security practitioners, administrators, and developers, it provides lightweight, scriptable defenses for authentication hardening, rate limiting, audit logging, and perimeter monitoring.
 
-🧠 Layer 2: The Guard’s Memory (Rate Limiting)
-​Filename: guard_memory.py
-​The Problem: Brute-force attacks. Without a "memory," a hacker can guess a password a million times a second.
-​The Solution: I implemented a counter mechanism using a while loop.
-​Why a while loop? It allows the program to persist in a state of "waiting" until a condition is met (either the correct key is found or the maximum attempts are exhausted).
-​Technical Hurdle: Managing the state of the "remaining tries" so that the user receives accurate feedback after every failure.
-​Scalability: For 1,000 users, I would move this logic to a database like Redis to track attempts by IP address or username.
+## Features & Modules
 
-​📜 Layer 3: The Secret Logbook (Security Logging)
-​Filename: secret_logbook.py
-​The Problem: If a breach occurs, we need to know when and how.
-​The Solution: I integrated the Python datetime module to create persistent records.
-​Key Feature: The script creates an "Audit Trail" in fortress_logs.txt. This ensures that even if the session ends, the history is saved for the "Captain" to read.
-​
-🔑 Layer 4 & 5: The Key Maker & Encryption Engine
-​Filenames: password_generator.py & encryption_engine.py
-​The Goal: Moving from static keys to dynamic, scrambled data.
-​The Logic: * The Key Maker: Uses the random library to generate high-entropy strings.
-​The Encryption Engine: Implements a Shift Cipher (Caesar Cipher) logic to scramble messages into ciphertext.
-​
-🔍 Layer 6 & 7: Vulnerability Scanner & Web Health Monitor
-​Concept: Proactive defense.
-​Vulnerability Scanner: Compares user inputs against a "Weak Database" of common passwords (like 123456).
-​Health Monitor: Uses a loop to send "Heartbeat" requests to a URL, checking for a Status 200 to ensure the fortress is still online.
+* **Gate Keeper (`gate_keeper_v2_bcrypt.py`):** Secure user authentication utilizing strong cryptographic hashing (Bcrypt) to protect credentials against plaintext exposure.
+* **Guard Memory (`guard_memory.py`):** Intelligent rate-limiting and persistence checks to mitigate brute-force attacks and abnormal connection spikes.
+* **Secret Logbook (`secret_logbook.py`):** Immutable audit trailing and timestamped security logging to record critical events for post-incident analysis.
+* **Key Maker & Encryption Engine (`password_generator.py`, `encryption_engine.py`):** High-entropy string generation and cryptographic scrambling utilities for secure data transmission.
+* **Vulnerability & Health Monitors (`vulnerability_scanner.py`, `web_health_monitor.py`):** Proactive system scanning and heartbeat checks to verify endpoint integrity and service availability.
 
----
+## Installation & Setup
 
-## ⚠️ Security Disclaimer
-This project is for **educational and portfolio purposes only**. While it demonstrates security concepts:
-* The encryption methods used (like Caesar Cipher) are for logic demonstration and are not cryptographically secure for real-world data.
-* Never use these scripts to store sensitive or personal information.
-* Always use industry-standard libraries and consult with security professionals for production-level applications.
+1. Clone the repository:
+   `git clone https://github.com/kazubuike114-art/Cyber-Fortress-Python.git && cd Cyber-Fortress-Python`
+2. Install dependencies:
+   `pip install -r requirements.txt`
+3. Run individual modules:
+   `python gate_keeper_v2_bcrypt.py`
+
+## Contributing
+Contributions, security bug reports, and pull requests are welcome! Please review our [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md) guidelines before submitting code.
+
+## License
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
